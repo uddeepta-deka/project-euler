@@ -23,13 +23,14 @@ def is_palindrome(num):
         return 0
 
 def largest_palin():
+    # x = np.arange(99, 9, -1)
     x = np.arange(999,99,-1)
     multiplied_vec = [m*n for m,n in product(x,x)]
     palin_vec = []
     for num in multiplied_vec:
-        if is_palindrome(num)==1:
+        if is_palindrome(num):
             palin_vec.append(num)
     print(max(palin_vec))
 
-    
-largest_palin()
+if __name__=="__main__":    
+    largest_palin()

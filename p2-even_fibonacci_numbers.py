@@ -42,4 +42,6 @@ def even_val_sum(Nmax):
             res += el
     return res
 
-print(even_val_sum(4000000))
+if __name__=="__main__":
+    print("This program finds the sum of the even-valued terms.")
+    print(even_val_sum(4000000))
